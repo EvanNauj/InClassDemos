@@ -15,7 +15,8 @@ public class ZombieInvasion {
         Town ourTown = new Town("Steveville", "Steve Cooper", 0, 0);
 
         // this is another object
-        Town bettendorf = new Town("Bettendorf", "Paula Ortez", -.5, 1.5);
+        Point bLocation = new Point(0.5, 1.5);
+        Town bettendorf = new Town("Bettendorf", "Paula Ortez", bLocation);
         System.out.println("Aaaaahhh!!! Zombie invasion! ");
 
         ourTown.setMayorName("Val");

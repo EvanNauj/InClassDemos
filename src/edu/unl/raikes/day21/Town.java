@@ -21,11 +21,21 @@ public class Town {
      * @param y         Y coordinate
      */
     public Town(String name, String mayorName, double x, double y) {
+        this(name, mayorName, new Point(x, y));
+    }
+
+    /**
+     * Constructs Town.
+     * 
+     * @param name      Name of town
+     * @param mayorName Name of mayor
+     * @param location  Location of town
+     */
+    public Town(String name, String mayorName, Point location) {
         this.name = name;
         this.mayorName = mayorName;
-        this.location = new Point(x, y);
-        System.out.println("makin a new town");
-        population++;
+        this.location = location;
+
     }
 
     /**
