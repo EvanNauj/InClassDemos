@@ -11,13 +11,14 @@ public class Town {
     private String mayorName;
     private Point location;
     private boolean isElectionSeason = false;
-    
+
     /**
+     * Constructs Town object.
      * 
-     * @param name
-     * @param mayorName
-     * @param x
-     * @param y
+     * @param name      Name of town
+     * @param mayorName Name of mayor
+     * @param x         X coordinate
+     * @param y         Y coordinate
      */
     public Town(String name, String mayorName, double x, double y) {
         this.name = name;
@@ -26,11 +27,12 @@ public class Town {
         System.out.println("makin a new town");
         population++;
     }
-    
+
     /**
      * Finds distance between two towns.
-     * @param otherTown Town current town is being compared to.
-     * @return Distance between two towns.
+     * 
+     * @param  otherTown Town current town is being compared to.
+     * @return           Distance between two towns.
      */
     public double distance(Town otherTown) {
         return this.location.distance(otherTown.getLocation());
@@ -73,29 +75,32 @@ public class Town {
             this.mayorName = mayorName;
         }
     }
-    
+
     /**
      * Gets location.
+     * 
      * @return location
      */
     public Point getLocation() {
         return this.location;
     }
-    
+
     /**
      * Sets location.
+     * 
      * @param location What location will be set to
      */
     public void setLocation(Point location) {
         this.location = location;
     }
-    
+
     /**
      * Prints the town's name and its mayor.
      */
     @Override
     public String toString() {
-        return "I'm a town called " + this.name + " and my mayor is the honorable " + this.mayorName + ". I am located at " + this.location;
+        return "I'm a town called " + this.name + " and my mayor is the honorable " + this.mayorName
+                + ". I am located at " + this.location;
     }
 
 }
