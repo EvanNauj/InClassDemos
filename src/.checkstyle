@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<fileset-config file-format-version="1.2.0" simple-config="false" sync-formatter="false">
+  <local-check-config name="RAIK-StyleGuide-Remote" location="https://raw.githubusercontent.com/raik183h-master/RAIK-Style-Guide/main/raik-style.xml" type="remote" description="">
+    <additional-data name="cache-props-file-location" value="RAIK-StyleGuide-Remote_1729698658535_cache.properties"/>
+    <additional-data name="cache-file" value="true"/>
+    <additional-data name="cache-file-location" value="RAIK-StyleGuide-Remote_1729698658535_cache.xml"/>
+  </local-check-config>
+  <fileset name="all" enabled="true" check-config-name="RAIK-StyleGuide-Remote" local="true">
+    <file-match-pattern match-pattern="." include-pattern="true"/>
+  </fileset>
+</fileset-config>
